@@ -290,13 +290,19 @@
             <div class="aside-cta">
               <h2 class="aside-form-title">Request a free quote</h2>
 
-              <form id="aside-form" class="aside-form form grid">
+              <form
+                id="aside-form"
+                class="aside-form form grid"
+                action="https://formspree.io/f/mkoeelde"
+                method="POST"
+              >
                 <div>
                   <label for="aside-first-name"
                     >First Name<span class="red-star">*</span></label
                   >
                   <input
                     id="aside-first-name"
+                    name="first_name"
                     type="text"
                     placeholder="John"
                     required
@@ -308,6 +314,7 @@
                   >
                   <input
                     id="aside-last-name"
+                    name="last_name"
                     type="text"
                     placeholder="Smith"
                     required
@@ -359,7 +366,7 @@
       </div>
 
       <!-- Complete Form -->
-      <section class="section-cta" id="section-cta">
+     <section class="section-cta" id="section-cta">
         <div class="container">
           <div class="complete-cta">
             <h2 class="complete-form-title">
@@ -368,13 +375,19 @@
             <p class="complete-form-description">
               Receive a fast response with upfront pricing and no hidden fees.
             </p>
-            <form id="complete-form" class="complete-form form grid">
+            <form
+              id="complete-form"
+              class="complete-form form grid"
+              action="https://formspree.io/f/mkoeelde"
+              method="POST"
+            >
               <div>
                 <label for="complete-first-name"
                   >First Name<span class="red-star">*</span></label
                 >
                 <input
                   id="complete-first-name"
+                  name="first_name"
                   type="text"
                   placeholder="John"
                   required
@@ -386,6 +399,7 @@
                 >
                 <input
                   id="complete-last-name"
+                  name="last_name"
                   type="text"
                   placeholder="Smith"
                   required
@@ -421,6 +435,7 @@
                 <label for="complete-message">Message</label>
                 <textarea
                   id="complete-message"
+                  name="message"
                   placeholder="Tell us what you need help with (e.g. job details, timing, location, special requirements)"
                 ></textarea>
               </div>

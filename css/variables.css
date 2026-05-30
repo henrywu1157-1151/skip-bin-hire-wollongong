@@ -1,0 +1,33 @@
+:root {
+  /* 主色 品牌色 */
+  --primary: #0b3d91;
+  --primary-thin: #3fa9f5;
+  --primary-hover: #082c6b;
+  --primary-bg: #f8f9fa;
+
+  /* 背景色 */
+  --bg-white: #fff;
+  --bg-light: #f9fbff;
+  --bg-accent: linear-gradient(135deg, #f0f6ff, #ffffff);
+
+  /* 文字颜色 */
+  --text-main: #1f2937;
+  --text-sub: #555;
+  --text-light: #777;
+
+  /* 边框 */
+  --border: #e6e6e6;
+
+  /* 阴影 */
+  --shadow-sm: 0 4px 10px rgba(0, 0, 0, 0.06);
+  --shadow-md: 0 10px 30px rgba(0, 0, 0, 0.08);
+  --primary-shadow: rgba(11, 61, 145, 0.5);
+
+  /* CTA按钮 */
+  --btn-primary: #0b3d91;
+  --btn-hover: #082c6b;
+
+  /* Radius */
+  --radius-sm: 8px;
+  --radius-md: 12px;
+}

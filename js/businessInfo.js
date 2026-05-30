@@ -42,14 +42,18 @@ function renderBusiness(data) {
 
   // ② 处理电话点击行为
  document.querySelectorAll("[data-action='tel']").forEach((el) => {
-  const phone = data.phone.replace(/\s/g, "");
+    const phone = data.phone.replace(/\s/g, "");
 
-  el.href = "tel:" + phone;
+    el.href = "tel:" + phone;
 
-  el.addEventListener("click", () => {
-    gtag("event", "click_to_call");
+    el.addEventListener("click", function () {
+      console.log("GA event fired");
+
+      if (typeof gtag === "function") {
+        gtag("event", "click_to_call");
+      }
+    });
   });
-});
 }
 
 renderBusiness(businessInfo);

@@ -130,6 +130,43 @@
     font-size: 3.6rem;
   }
 
+  /*  MOBILE  STICKY CALL */
+  .mobile-sticky-box {
+    display: block;
+
+    position: fixed;
+    bottom: 0;
+    left: 0;
+
+    width: 100%;
+
+    z-index: 9999;
+  }
+
+  .mobile-sticky-call {
+    text-align: center;
+
+    width: 100%;
+
+    padding: 1.8rem;
+
+    background-color: #2f9e44;
+    color: #fff;
+
+    text-decoration: none;
+
+    font-size: 2rem;
+    font-weight: 700;
+  }
+
+  .mobile-sticky-box.nav-open {
+    display: none;
+  }
+
+  body {
+    padding-bottom: 7rem;
+  }
+
   /* ######################### */
   /* ######  Below 860px(Tables) ###### */
   /* ######################### */

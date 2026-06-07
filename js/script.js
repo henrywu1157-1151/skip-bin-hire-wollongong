@@ -53,11 +53,38 @@ function openFaq() {
 openFaq();
 
 ///////////////////////////////////////////////////////////
-// Make mobile navigation work
+// MOBILE NAVIGATION
 
 const btnNavEl = document.querySelector(".btn-mobile-nav");
 const headerEl = document.querySelector(".header");
+const btnStickyEl = document.querySelector(".mobile-sticky-box");
 
 btnNavEl.addEventListener("click", function () {
   headerEl.classList.toggle("nav-open");
+  btnStickyEl.classList.toggle("nav-open");
 });
+
+///////////////////////////////////////////////////////////
+/*  MOBILE  STICKY CALL */
+
+const heroSection = document.querySelector(".section-hero");
+const stickyCall = document.querySelector(".mobile-sticky-call");
+
+const observer = new IntersectionObserver(
+  function (entries) {
+    const ent = entries[0];
+
+    if (ent.isIntersecting) {
+      stickyCall.style.display = "none";
+    } else {
+      stickyCall.style.display = "block";
+    }
+  },
+  {
+    root: null,
+    threshold: 0,
+  },
+);
+
+observer.observe(heroSection);
+

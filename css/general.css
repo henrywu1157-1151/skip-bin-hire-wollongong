@@ -81,6 +81,17 @@ body {
   z-index: 1000;
 }
 
+.logo-link {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  height: 4.8rem;
+  width: auto;
+  display: block;
+}
+
 /* Nav */
 .main-nav {
   width: 100%;
@@ -263,4 +274,11 @@ body {
   color: #999;
   margin-top: 4rem;
   text-align: center;
+}
+
+/********************************/
+/* STICKY CALL */
+/********************************/
+.mobile-sticky-box {
+  display: none;
 }
